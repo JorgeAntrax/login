@@ -1,0 +1,140 @@
+#index {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#index .loginContainer {
+  height: 80%;
+  box-shadow: 0 10px 30px -1px rgba(0, 0, 0, 0.4);
+  padding: 0;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+#index .loginContainer column:first-of-type {
+  background: url("../image/fondoLogin.jpeg") no-repeat bottom center;
+  background-size: cover;
+  position: relative;
+}
+
+#index .loginContainer column:first-of-type::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 0, 214, 0.589);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#index .loginContainer column:first-of-type responsive {
+  margin: 6rem auto 2rem auto;
+  width: 100px;
+  height: 100px;
+}
+
+#index .loginContainer .megatitle {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* styles for app main layout */
+#layout-main sidebar {
+  background-color: #21d4fd;
+  background-image: linear-gradient(15deg, #21d4fd 0%, #b721ff 100%);
+}
+
+#layout-main sidebar,
+#layout-main sidebar menu-item a {
+  color: #fff;
+}
+
+#layout-main sidebar menu-item {
+  min-height: 2.25rem;
+}
+
+#layout-main sidebar dropdown .is-toggle-dropdown {
+  cursor: pointer;
+}
+
+#layout-main sidebar dropdown a {
+  color: #333;
+}
+
+#layout-main sidebar responsive {
+  margin-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#layout-main sidebar responsive tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+#layout-main main {
+  overflow-y: auto;
+}
+
+#layout-main navbar {
+  background-color: #fff;
+}
+
+#layout-main navbar dropdown {
+  align-items: center;
+  justify-content: center;
+}
+
+#layout-main navbar icon {
+  margin: 0;
+}
+
+#layout-main navbar navbrand > icon,
+#layout-main navbar navmenu > icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0;
+}
+
+#layout-main navbar navbrand {
+  justify-content: flex-start;
+}
+
+#layout-main navbar navbrand #logo img {
+  height: 48px;
+  width: 48px;
+}
+
+.is-flex, .is-flex-block {
+  display: flex;
+}
+
+.is-flex-block {
+  flex-direction: column;
+}
+
+.is-square-84 {
+  width: 84px;
+  height: 84px;
+}
+
+/* override tooltips */
+[tooltip] {
+  border: none;
+}
+
+[tooltip]::after, [tooltip]::before {
+  padding: .5rem;
+}
+
+[tooltip]::after {
+  min-width: 6rem;
+}
+
+[tooltip]::before {
+  left: 110% !important;
+}
+/*# sourceMappingURL=main.css.map */

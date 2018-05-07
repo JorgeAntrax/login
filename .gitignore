@@ -1,0 +1,7 @@
+# ignoramos todas las carpetas que no sean codigo ni codigo compilado
+*.zip
+*.config
+*.txt
+*.png
+image/
+fonts/

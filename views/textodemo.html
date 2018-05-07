@@ -1,0 +1,32 @@
+<?php
+							while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){ ?>
+    <tr>
+        <td>
+            <?php echo $row['id_user']; ?>
+        </td>
+        <td>
+            <?php echo $row['name_user']; ?>
+        </td>
+        <td>
+            <?php echo $row['lastname_user']; ?>
+        </td>
+        <td>
+            <?php echo $row['login_user']; ?>
+        </td>
+        <td>
+            <?php echo $row['passwd']; ?>
+        </td>
+        <td>
+            <?php echo $row['email']; ?>
+        </td>
+        <td>
+            <?php echo $row['age_user']; ?>
+        </td>
+        <td>
+            <?php echo $row['birthday']; ?>
+        </td>
+        <td>
+            <?php echo $row['created']; ?>
+        </td>
+    </tr>
+    <?php } ?>
